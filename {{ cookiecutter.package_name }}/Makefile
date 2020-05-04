@@ -1,3 +1,5 @@
+# This needs to be migrated away from pipenv
+
 all:
 	@echo "\t\`make test\` to run tests"
 	@echo "\t\`make dev\` to install development version"
