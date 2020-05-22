@@ -2,6 +2,10 @@ from pathlib import Path
 from subprocess import run, CalledProcessError
 import shlex
 
+import virtualenv
+import os
+
+
 pkg_name = '{{ cookiecutter.package_name }}'
 repo = '{{ cookiecutter.url }}'
 
@@ -25,10 +29,14 @@ def set_markup_style():
         to_remove.unlink()
 
 
-def install_deps():
-    """Install dependencies """
-    pip_dev = run('pip install -r requirements.txt'.split(), check=True)
-    print('Installed dependencies and virtual environment.')
+#def install_deps():
+#    """Install dependencies """
+#    venv_dir = "venv"
+#    virtualenv.create_environment(venv_dir)
+#
+#    #pip_dev = run('pip install -r requirements.txt'.split(), check=True)
+#    #print('Installed dependencies and virtual environment.')
+#    pass
 
 
 def init_repo():
@@ -56,7 +64,7 @@ def main():
     clean_up_docopt()
     set_markup_style()
 
-    install_deps()
+#    install_deps()
     init_repo()
 
 
