@@ -2,12 +2,12 @@
     "package_name": "cookiecutter_science",
     "project_tagline":"solving problems, taking names",
     "project_description": "a tool for doing cool things",
-    "full_name": "Graham Voysey",
-    "email": "gvoysey@bu.edu",
-    "github_username": "gvoysey",
+    "full_name": "Aleksi Knuutila",
+    "email": "aleksi.knuutila@oii.ox.ac.uk",
+    "github_username": "AleksiKnuutila",
     "url": ["https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.package_name }}.git",""],
     "cli_tool": ["docopt", "click", "none"],
-    "markup_language": ["org", "markdown"],
-    "formatter": ["none", "black", "yapf"],
+    "markup_language": ["markdown", "org"],
+    "formatter": ["black", "none", "yapf"],
     "install_precommit_hooks":["no","yes"]
 }
